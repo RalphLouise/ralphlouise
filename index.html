@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="shortcut icon" type="image" href="img/SANJI.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>EMPOWERMENT TECHNOLOGIES</title>
+  </head>
+
+  <body>
+    <div class="first-container">
+      <header class="first-header">
+        <img src="img/SANJI.png" width="70" height="70" class="first-icon" />
+        <h1 class="first-title">PERFORMANCE TASK 3 & 4</h1>
+
+        <nav class="first-nav">
+          <ul>
+            <li><a href="#home" class="one-nav">HOME</a></li>
+            <li><a href="#bio">BIOGRAPHY</a></li>
+            <li><a href="#output">OUTPUTS</a></li>
+            <li><a href="#donut">DONUT</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <input type="checkbox" class="btn-toggle" checked />
+
+    <script>
+      const btn = document.querySelector(".btn-toggle");
+
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme == "dark") {
+        document.body.classList.add("dark-theme");
+      }
+
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+
+        let theme = "light";
+        if (document.body.classList.contains("dark-theme")) {
+          theme = "dark";
+        }
+        localStorage.setItem("theme", theme);
+      });
+    </script>
+
+    <div class="themes">
+      <button class="btn btn1"></button>
+      <button class="btn btn2"></button>
+      <button class="btn btn3"></button>
+      <button class="btn btn4"></button>
+      <button class="btn btn5"></button>
+      <button class="btn btn6"></button>
+    </div>
+
+    <header class="second-header" id="home">
+      <img
+        src="img/RALPH.png"
+        width="250px"
+        height="250px"
+        alt="profile"
+        class="first-img"
+      />
+      <h2 class="second-title">Ralph Louise Madalura</h2>
+      <p class="second-p">11 STEM B PENELOPE</p>
+      <div class="first-socmed">
+        <a href="https://www.facebook.com/louiseralph8" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/rlouiisee" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+        <a href="https://www.instagram.com/louiiise_8/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://discord.gg/4YwF2snm" target="_blank"
+          ><i class="fab fa-discord"></i
+        ></a>
+      </div>
+      <p class="third-p">
+        Hi! I'm Ralph Louise Madalura a Front-End Web Developer, A grade 11
+        student from San Mateo Senior High School from San Mateo, Rizal
+        Philippines, I'm a STEM student from 11-STEM B PENELOPE, I'm also a
+        Photoshop & After Effects editor. enjoy scrolling!
+      </p>
+    </header>
+    <section>
+      <div class="wrapper">
+        <div class="top-bar">
+          <i class="material-icons">expand_more</i>
+          <span>Now Playing</span>
+          <i class="material-icons">more_horiz</i>
+        </div>
+        <div class="img-area">
+          <img src="" alt="" />
+        </div>
+        <div class="song-details">
+          <p class="name"></p>
+          <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+          <div class="progress-bar">
+            <audio id="main-audio" src=""></audio>
+          </div>
+          <div class="song-timer">
+            <span class="current-time">0:00</span>
+            <span class="max-duration">0:00</span>
+          </div>
+        </div>
+        <div class="controls">
+          <i id="repeat-plist" class="material-icons" title="Playlist looped"
+            >repeat</i
+          >
+          <i id="prev" class="material-icons">skip_previous</i>
+          <div class="play-pause">
+            <i class="material-icons play">play_arrow</i>
+          </div>
+          <i id="next" class="material-icons">skip_next</i>
+          <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+        <div class="music-list">
+          <div class="header">
+            <div class="row">
+              <i class="list material-icons">queue_music</i>
+              <span>Music list</span>
+            </div>
+            <i id="close" class="material-icons">close</i>
+          </div>
+          <ul>
+            <!-- here li list are coming from js -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+
+    <div class="second-container" id="bio">
+      <article class="first-article">
+        <h1 class="third-title">BIOGRAPHY</h1>
+        <p>
+          <q class="first-quote"
+            >It's not how much time you have, it's how you use it.</q
+          >
+        </p>
+        <cite>-Ekko League of Legends</cite>
+        <p class="fourth-p">
+          Hi my name is Ralph Louise Onahon Madalura or 'Beo' (Nickname) for
+          short. I lived in Block 6 Lot 8 Juvilaeum Subdivision Baranggay Dulong
+          Bayan 2 at the province of San Mateo, Rizal. I'm turning 17 this year
+          in February 8. I'm glad that I can build my very first own website. I
+          am often approached by any disease like lymphadenitis, Urinary Track
+          Infection (UTI), Dengue, Chicken Pox and recently Corona virus. I love
+          playing video games because it helps me to reduce my stress after
+          studying, I'm addicted on MOBA games like League of Legends my main on
+          this game is Kayle & Viego.
+        </p>
+
+        <p class="fifth-p">
+          In Tactical-shooting games is Valorant my main is Skye & Jett, Also I
+          love rhythm games like SuperStar JYP Nation these game is so difficult
+          to play because it requires your reaction time when tapping the
+          circles. I've always play with my friends for so much fun and make
+          memories too.
+        </p>
+        <div class="first-slider">
+          <div class="first-images">
+            <input
+              type="radio"
+              name="slide"
+              id="img1"
+              class="first-input"
+              checked
+            />
+            <input type="radio" name="slide" id="img2" class="first-input" />
+            <img
+              src="img/LEAGUE.png"
+              alt="league"
+              width="700px"
+              height="50%"
+              class="second-img"
+            />
+
+            <img
+              src="img/JYP.png"
+              alt="ssjyp"
+              width="700px"
+              height="50%"
+              class="third-img"
+            />
+          </div>
+          <div class="first-dots">
+            <label for="img1" class="first-label"></label>
+            <label for="img2" class="first-label"></label>
+          </div>
+        </div>
+      </article>
+
+      <aside class="first-aside">
+        <h2 class="fourth-title">Ralph Madalura</h2>
+        <div id="first-ol">
+          <a>Original</a>
+          <a href="https://www.youtube.com/watch?v=ZPCfoCVCx3U" target="_blank"
+            >LoL</a
+          >
+          <a href="https://www.youtube.com/watch?v=i6MpT7lLwls" target="_blank"
+            >Loud</a
+          >
+          <a href="https://www.youtube.com/watch?v=i-L0Gs2whvc" target="_blank"
+            >JJBA</a
+          >
+          <a href="https://www.youtube.com/watch?v=hm9gF5Gi9x4" target="_blank">
+            Rick</a
+          >
+        </div>
+        <div class="second-slider">
+          <div class="second-images">
+            <input
+              type="radio"
+              name="slide"
+              id="img3"
+              checked
+              class="second-input"
+            />
+            <input type="radio" name="slide" id="img4" class="second-input" />
+            <input type="radio" name="slide" id="img5" class="second-input" />
+            <input type="radio" name="slide" id="img6" class="second-input" />
+            <input type="radio" name="slide" id="img7" class="second-input" />
+            <img
+              src="img/ORIGINAL.png"
+              alt="league"
+              width="320px"
+              height="420px"
+              class="fourth-img"
+            />
+
+            <img
+              src="img/LOL-ADAPTATION.jpeg.png"
+              alt="LoL"
+              title="League of Legends"
+              width="100%"
+              height="100%"
+              class="fifth-img"
+            />
+            <img
+              src="img/LOUDHOUSE-ADAPTATION.png"
+              alt="Loud"
+              title="Loud House"
+              width="100%"
+              height="100%"
+              class="sixth-img"
+            />
+            <img
+              src="img/JOJO-ADAPTATION.png"
+              alt="JJBA"
+              title="JoJo"
+              width="100%"
+              height="100%"
+              class="seventh-img"
+            />
+            <img
+              src="img/RICK-ADAPTATION.png"
+              alt="Rick"
+              title="Rick & Morty"
+              width="100%"
+              height="100%"
+              class="eighth-img"
+            />
+          </div>
+          <div class="second-dots">
+            <label for="img3"></label>
+            <label for="img4"></label>
+            <label for="img5"></label>
+            <label for="img6"></label>
+            <label for="img7"></label>
+          </div>
+        </div>
+        <div class="first-info">
+          <h3 class="first-side">Full Name</h3>
+          <div class="second-side">Ralph Louise Onahon Madalura</div>
+          <h3 class="first-side">Nickname</h3>
+          <div class="second-side">Beo</div>
+        </div>
+        <h2 class="fifth-title">Profile</h2>
+        <div class="first-info">
+          <h3 class="first-side">Age</h3>
+          <div class="second-side">17</div>
+          <h3 class="first-side">Birthday</h3>
+          <div class="second-side">February 8, 2005</div>
+          <h3 class="first-side">Chinese Zodiac</h3>
+          <div class="second-side">Rooster</div>
+          <h3 class="first-side">Zodiac Sign</h3>
+          <div class="second-side">Aquarius</div>
+          <h3 class="first-side">Gender</h3>
+          <div class="second-side">Male</div>
+          <h3 class="first-side">Height</h3>
+          <div class="second-side">170cm (5 ft 7 in)</div>
+          <h3 class="first-side">Weight</h3>
+          <div class="second-side">60kg (132 lb)</div>
+          <h3 class="first-side">Blood Type</h3>
+          <div class="second-side">O<sup>+</sup></div>
+          <h3 class="first-side">Hair Color</h3>
+          <div class="second-side">Black</div>
+          <h3 class="first-side">Eye Color</h3>
+          <div class="second-side">Brown</div>
+          <h3 class="first-side">Strand</h3>
+          <div class="second-side">11 STEM B PENELOPE</div>
+        </div>
+        <h2 class="fifth-title">Favorites</h2>
+        <div class="first-info">
+          <h3 class="first-side">Color</h3>
+          <div class="second-side">Chartreuse</div>
+          <h3 class="first-side">Movie</h3>
+          <div class="second-side">
+            Pulp Fiction, Marvel Movies, Never Cry Wolf, Sherlock Holmes
+          </div>
+          <h3 class="first-side">Anime</h3>
+          <div class="second-side">
+            JoJo Bizarre Adventure, Code Geass, One Piece
+          </div>
+          <h3 class="first-side">Food</h3>
+          <div class="second-side">His grandmother's cooking</div>
+          <h3 class="first-side">Musician</h3>
+          <div class="second-side">Yugo Kanno</div>
+          <h3 class="first-side">Athlete</h3>
+          <div class="second-side">Kobe Bryant</div>
+          <h3 class="first-side">Hobbies</h3>
+          <div class="second-side">
+            Likes creating games, reading about oceanography.
+          </div>
+          <h3 class="first-side">Games</h3>
+          <div class="second-side">
+            League of Legends (Kayle), Valorant (Skye or Jett), Minecraft,
+            Tetris
+          </div>
+          <h3 class="first-side">Dislikes</h3>
+          <div class="second-side">Loud women</div>
+          <h3 class="first-side">Goals</h3>
+          <div class="second-side">
+            To graduate, Obtain a Master's degree & Doctorate degree in Computer
+            Science course
+          </div>
+        </div>
+        <h2 class="fifth-title">Relatives</h2>
+        <div class="first-info">
+          <div class="left-side">
+            <center>Nimfa Madalura</center>
+            <sup>(Mother)</sup>
+          </div>
+          <div class="right-side">
+            <center>Warlito Madalura</center>
+            <sup>(Father)</sup>
+          </div>
+          <div class="left-side">
+            <center>Kyle Onahon</center>
+            <sup>(Older Brother)</sup>
+          </div>
+          <div class="right-side">
+            <center>Gabrielle Madalura</center>
+            <sup>(Young Sister)</sup>
+          </div>
+          <div class="left-side">
+            <center>Danielle Madalura</center>
+            <sup>(Young Sister)</sup>
+          </div>
+          <div class="right-side">
+            <center>Aurora Onahon</center>
+            <sup>(Grandmother)</sup>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="third-container" id="output">
+      <a
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        target="_blank"
+        class="rickroll"
+        >CLICK ME</a
+      >
+
+      <h1 class="sixth-title">OUTPUTS</h1>
+
+      <div class="input-container">
+        <input
+          class="second-input"
+          type="radio"
+          id="all"
+          name="button"
+          checked
+        />
+        <input class="second-input" type="radio" id="output1" name="button" />
+        <input class="second-input" type="radio" id="output2" name="button" />
+        <input class="second-input" type="radio" id="output3" name="button" />
+        <input class="second-input" type="radio" id="output4" name="button" />
+        <input class="second-input" type="radio" id="output5" name="button" />
+        <input class="second-input" type="radio" id="output6" name="button" />
+        <input class="second-input" type="radio" id="output7" name="button" />
+        <input class="second-input" type="radio" id="output8" name="button" />
+        <input class="second-input" type="radio" id="peta1" name="button" />
+        <input class="second-input" type="radio" id="peta2" name="button" />
+
+        <label class="tag all" for="all">ALL</label>
+        <label class="tag tag1" for="output1">OUTPUT 1</label>
+        <label class="tag tag2" for="output2">OUTPUT 2</label>
+        <label class="tag tag3" for="output3">OUTPUT 3</label>
+        <label class="tag tag4" for="output4">OUTPUT 4</label>
+        <label class="tag tag5" for="output5">OUTPUT 5</label>
+        <label class="tag tag6" for="output6">OUTPUT 6</label>
+        <label class="tag tag7" for="output7">OUTPUT 7</label>
+        <label class="tag tag8" for="output8">OUTPUT 8</label>
+        <label class="tag tag9" for="peta1">PETA 1</label>
+        <label class="tag tag10" for="peta2">PETA 2</label>
+        <br />
+
+        <div class="third-images">
+          <img src="outputs/OUTPUT-1.png" class="output1" alt="output1.1" />
+
+          <img src="outputs/OUTPUT-2.png" class="output2" alt="output2.1" />
+
+          <img src="outputs/OUTPUT-3.png" class="output3" alt="output3.1" />
+
+          <img src="outputs/OUTPUT-4-1.png" class="output4" alt="output4.1" />
+          <img src="outputs/OUTPUT-4-2.png" class="output4" alt="output4.2" />
+          <img src="outputs/OUTPUT-4-3.png" class="output4" alt="output4.3" />
+          <img src="outputs/OUTPUT-4-4.png" class="output4" alt="output4.4" />
+          <img src="outputs/OUTPUT-4-5.png" class="output4" alt="output4.5" />
+          <img src="outputs/OUTPUT-4-6.png" class="output4" alt="output4.6" />
+          <img src="outputs/OUTPUT-4-7.png" class="output4" alt="output4.7" />
+
+          <img src="outputs/OUTPUT-5-1.png" class="output5" alt="output5.1" />
+          <img src="outputs/OUTPUT-5-2.png" class="output5" alt="output5.2" />
+
+          <img src="outputs/OUTPUT-6-1.png" class="output6" alt="output6.1" />
+          <img src="outputs/OUTPUT-6-2.png" class="output6" alt="output6.2" />
+
+          <img src="outputs/OUTPUT-7-1.png" class="output7" alt="output7.1" />
+
+          <img src="outputs/OUTPUT-8-1.png" class="output8" alt="output8.1" />
+          <img src="outputs/OUTPUT-8-2.png" class="output8" alt="output8.2" />
+
+          <img src="outputs/PETA-1-1.png" class="peta1" alt="peta1.1" />
+          <img src="outputs/PETA-1-2.png" class="peta1" alt="peta1.2" />
+
+          <img src="outputs/PETA-2-1.png" class="peta2" alt="peta2.1" />
+          <img src="outputs/PETA-2-2.png" class="peta2" alt="peta2.2" />
+          <img src="outputs/PETA-2-3.png" class="peta2" alt="peta2.3" />
+        </div>
+      </div>
+    </div>
+
+    <div class="fourth-container" id="donut">
+      <article class="third-article">
+        <h1 class="donut">DONUT</h1>
+        <p class="sixth-p">
+          I have a little study in the hardest programming language in the world
+          which is the Python and ASCII. I create a 3D moving donut that using
+          all syntax. But the math of this donut is too hard to understand
+          that's why I watch some videos on YouTube on how to do that Spinning
+          Donut code but my Laptop can't run the code smoothly but it work
+          pretty well. You can see the 3D spinning donut in the gif. Thanks!
+        </p>
+        <img
+          src="donut/donut.gif "
+          width="400px"
+          height="400px"
+          class="donutmoving"
+        />
+        <video
+          controls
+          src="donut/donutpy.mp4 "
+          width="50%"
+          height="50%"
+          class="video"
+        ></video>
+      </article>
+    </div>
+
+    <div class="last-container">
+      <footer class="footer">
+        <img
+          src="img/stem.jpg"
+          width="200"
+          height="50"
+          alt="buzz"
+          class="img-footer"
+        />
+        <img
+          src="img/lol.png"
+          width="160"
+          height="100"
+          alt="buzz"
+          class="img-footer"
+        />
+        <img
+          src="img/jobro.png"
+          width="150"
+          height="100"
+          alt="buzz"
+          class="img-footer"
+        />
+        <img
+          src="img/ricks.png"
+          width="200"
+          height="100"
+          alt="buzz"
+          class="img-footer"
+        />
+        <img
+          src="img/buzz.png"
+          width="100"
+          height="100"
+          alt="buzz"
+          class="img-footer"
+        />
+        <img
+          src="img/Lakers.png"
+          width="100"
+          height="100"
+          alt="buzz"
+          class="img-footer"
+        />
+        <img
+          src="img/Rusteze.png"
+          width="100"
+          height="100"
+          alt="buzz"
+          class="img-footer"
+        />
+        <p last-p>&copy; Empowerment Technologies 2021-2022</p>
+        <a
+          href="https://www.youtube.com/watch?v=YJWSAJjkTsI"
+          class="rickroll"
+          target="_blank"
+          >Click this link</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>
